@@ -13,7 +13,19 @@
 		49F608082121BE6D006BF4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F608072121BE6D006BF4F4 /* Assets.xcassets */; };
 		49F6080B2121BE6D006BF4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F608092121BE6D006BF4F4 /* LaunchScreen.storyboard */; };
 		49F954032124849C008016DE /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F954022124849C008016DE /* RatingControl.swift */; };
+		E5B77E0B21316CBE0082D5F9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B77E0A21316CBE0082D5F9 /* Meal.swift */; };
+		E5B77E14213171170082D5F9 /* Learn_iOsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B77E13213171170082D5F9 /* Learn_iOsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5B77E16213171170082D5F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49F607F52121BE6A006BF4F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49F607FC2121BE6A006BF4F4;
+			remoteInfo = "Learn iOs";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		49F607FD2121BE6A006BF4F4 /* Learn iOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn iOs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,21 @@
 		49F6080A2121BE6D006BF4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49F6080C2121BE6D006BF4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49F954022124849C008016DE /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		E5B77E0A21316CBE0082D5F9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		E5B77E11213171170082D5F9 /* Learn iOsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Learn iOsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B77E13213171170082D5F9 /* Learn_iOsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn_iOsTests.swift; sourceTree = "<group>"; };
+		E5B77E15213171170082D5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		49F607FA2121BE6A006BF4F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5B77E0E213171170082D5F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				49F607FF2121BE6A006BF4F4 /* Learn iOs */,
+				E5B77E12213171170082D5F9 /* Learn iOsTests */,
 				49F607FE2121BE6A006BF4F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				49F607FD2121BE6A006BF4F4 /* Learn iOs.app */,
+				E5B77E11213171170082D5F9 /* Learn iOsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +85,21 @@
 				49F608022121BE6A006BF4F4 /* ViewController.swift */,
 				49F954022124849C008016DE /* RatingControl.swift */,
 				49F608042121BE6A006BF4F4 /* Main.storyboard */,
+				E5B77E0A21316CBE0082D5F9 /* Meal.swift */,
 				49F608072121BE6D006BF4F4 /* Assets.xcassets */,
 				49F608092121BE6D006BF4F4 /* LaunchScreen.storyboard */,
 				49F6080C2121BE6D006BF4F4 /* Info.plist */,
 			);
 			path = "Learn iOs";
+			sourceTree = "<group>";
+		};
+		E5B77E12213171170082D5F9 /* Learn iOsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5B77E13213171170082D5F9 /* Learn_iOsTests.swift */,
+				E5B77E15213171170082D5F9 /* Info.plist */,
+			);
+			path = "Learn iOsTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +122,24 @@
 			productReference = 49F607FD2121BE6A006BF4F4 /* Learn iOs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E5B77E10213171170082D5F9 /* Learn iOsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5B77E18213171170082D5F9 /* Build configuration list for PBXNativeTarget "Learn iOsTests" */;
+			buildPhases = (
+				E5B77E0D213171170082D5F9 /* Sources */,
+				E5B77E0E213171170082D5F9 /* Frameworks */,
+				E5B77E0F213171170082D5F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5B77E17213171170082D5F9 /* PBXTargetDependency */,
+			);
+			name = "Learn iOsTests";
+			productName = "Learn iOsTests";
+			productReference = E5B77E11213171170082D5F9 /* Learn iOsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +152,10 @@
 				TargetAttributes = {
 					49F607FC2121BE6A006BF4F4 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					E5B77E10213171170082D5F9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 49F607FC2121BE6A006BF4F4;
 					};
 				};
 			};
@@ -116,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				49F607FC2121BE6A006BF4F4 /* Learn iOs */,
+				E5B77E10213171170082D5F9 /* Learn iOsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +189,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5B77E0F213171170082D5F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +203,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B77E0B21316CBE0082D5F9 /* Meal.swift in Sources */,
 				49F608032121BE6A006BF4F4 /* ViewController.swift in Sources */,
 				49F954032124849C008016DE /* RatingControl.swift in Sources */,
 				49F608012121BE6A006BF4F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5B77E0D213171170082D5F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B77E14213171170082D5F9 /* Learn_iOsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5B77E17213171170082D5F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49F607FC2121BE6A006BF4F4 /* Learn iOs */;
+			targetProxy = E5B77E16213171170082D5F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		49F608042121BE6A006BF4F4 /* Main.storyboard */ = {
@@ -316,6 +398,46 @@
 			};
 			name = Release;
 		};
+		E5B77E19213171170082D5F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 682QXWMTU7;
+				INFOPLIST_FILE = "Learn iOsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercdev.Learn-iOsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Learn iOs.app/Learn iOs";
+			};
+			name = Debug;
+		};
+		E5B77E1A213171170082D5F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 682QXWMTU7;
+				INFOPLIST_FILE = "Learn iOsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercdev.Learn-iOsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Learn iOs.app/Learn iOs";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +455,15 @@
 			buildConfigurations = (
 				49F608102121BE6D006BF4F4 /* Debug */,
 				49F608112121BE6D006BF4F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5B77E18213171170082D5F9 /* Build configuration list for PBXNativeTarget "Learn iOsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5B77E19213171170082D5F9 /* Debug */,
+				E5B77E1A213171170082D5F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
