@@ -1,20 +1,10 @@
-//
-//  Meal.swift
-//  Learn iOs
-//
-//  Created by Andrey Rybakin on 25/08/2018.
-//  Copyright © 2018  Andrew. All rights reserved.
-//
-
 import UIKit
 
 class Meal {
-    
     // MARK: Properties
     var name: String
     var photo: UIImage?
     var rating: Int
-    
     
     init?(name: String, photo: UIImage?, rating: Int) {
         guard !name.isEmpty else {
@@ -28,6 +18,4 @@ class Meal {
         self.photo = photo
         self.rating = rating
     }
-    
-    
 }
