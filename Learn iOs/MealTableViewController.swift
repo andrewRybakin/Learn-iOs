@@ -9,8 +9,11 @@ class MealTableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		navigationItem.leftBarButtonItem = editButtonItem
-		
-		loadSampleMeals()
+		if let savedMeals = loadMeals() {
+			meals += savedMeals
+		} else {
+			loadSampleMeals()
+		}
 	}
 	
 	override func didReceiveMemoryWarning() {
@@ -50,6 +53,7 @@ class MealTableViewController: UITableViewController {
 		if editingStyle == .delete {
 			meals.remove(at: indexPath.row)
 			tableView.deleteRows(at: [indexPath], with: .fade)
+			saveMeals()
 		}
 	}
 	
@@ -87,6 +91,7 @@ class MealTableViewController: UITableViewController {
 				meals.append(meal)
 				tableView.insertRows(at: [indexPath], with: .automatic)
 			}
+			saveMeals()
 		}
 	}
 	
@@ -107,5 +112,17 @@ class MealTableViewController: UITableViewController {
 		}
 		
 		meals += [meal1, meal2, meal3]
+	}
+	
+	private func loadMeals() -> [Meal]? {
+		return NSKeyedUnarchiver.unarchiveObject(withFile: Meal.ArchiveURL.path) as? [Meal]
+	}
+	
+	private func saveMeals() {
+		if NSKeyedArchiver.archiveRootObject(meals, toFile: Meal.ArchiveURL.path) {
+			os_log("Meals successfully saved", log: OSLog.default, type: .debug)
+		} else {
+			os_log("Meals saving failed", log: OSLog.default, type: .error)
+		}
 	}
 }
